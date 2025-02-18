@@ -1,22 +1,10 @@
-version: "3.8"
-
 services:
-  web1:
+  game1:
     build: .
     ports:
       - "8080:8080"
-    volumes:
-      - .:/app
-    environment:
-      - NODE_ENV=development
-    command: node server.js
 
-  web2:
+  game2:
     build: .
     ports:
       - "8081:8080"
-    volumes:
-      - .:/app
-    environment:
-      - NODE_ENV=development
-    command: node server.js
